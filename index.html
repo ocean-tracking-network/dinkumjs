@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinkumJS</title>
+
+</head>
+<body>
+   <h1>DBD Decoder</h1> 
+<p id="cacheNotice">No cache files</p>
+<input type="file" id="cacheInput" multiple>
+<input type="file" id="dbdInput" multiple>
+    
+
+
+    <script type="module">
+        import {DBDFile} from './dist/index.js'
+        var cacheFiles = []
+        document.getElementById('cacheInput').addEventListener('change', async(event) => {
+            cacheFiles = event.target.files;
+            document.getElementById("cacheNotice").innerText = "Cache files added!"
+        })
+        document.getElementById('dbdInput').addEventListener('change', async(event) => {
+            console.log("Changed file, trying to decode")
+            const dbdFile = new DBDFile(event.target.files[0], cacheFiles)
+            await dbdFile.decode()
+            console.log(dbdFile.getCols(["m_depth", "m_pitch"]))
+        })
+    </script>
+</body>
+</html>
