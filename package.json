@@ -1,6 +1,6 @@
 {
   "name": "dinkumjs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A Dinkum Binary Data (DBD) decoder for slocum gliders",
   "main": "dist/index.js",
   "scripts": {
@@ -10,7 +10,9 @@
   },
   "keywords": [],
   "author": "Ellis Keener-LaCroix",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "type": "module",
   "types": "dist/index.d.ts",
