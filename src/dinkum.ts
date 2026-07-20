@@ -268,6 +268,9 @@ export class DBDFile{
         }
     return ret
     }
+    get columns(): string[] {
+        return this.#sensorList.map(x => x.name)
+    }
 }
 
 export class DBDFiles {

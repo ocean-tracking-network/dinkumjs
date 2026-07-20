@@ -26,6 +26,7 @@
             const dbdFile = new DBDFile(event.target.files[0], cacheFiles)
             await dbdFile.decode()
             console.log(dbdFile.getCols(["m_depth", "m_pitch"]))
+            console.log(dbdFile.columns)
         })
     </script>
 </body>
