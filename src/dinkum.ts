@@ -37,7 +37,7 @@ type DBDRecord = {
     mods: number[]
 }
 
-type ProcessedRecords = {
+export type ProcessedRecords = {
     sci_m_present_time: Date[];
 } & {
     [key: string]: (number | null)[];

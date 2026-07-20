@@ -1,6 +1,2 @@
-import { DBDFile, DBDFiles } from "./dinkum.js";
-
-export {
-    DBDFile,
-    DBDFiles
-}
+export { DBDFile, DBDFiles } from "./dinkum.js";
+export type { ProcessedRecords } from "./dinkum.js"
