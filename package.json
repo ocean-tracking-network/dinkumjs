@@ -1,6 +1,6 @@
 {
   "name": "dinkumjs",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "A Dinkum Binary Data (DBD) decoder for slocum gliders",
   "main": "dist/index.js",
   "scripts": {
